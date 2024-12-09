@@ -5,8 +5,8 @@ from flask import render_template,request
 import textblob
 import google.generativeai as genai
 import os
-api=os.getenv("makersuite")
 #api='AIzaSyC3PgQn6g619clqC5CZd_CymqrGq7O2iC0'
+api=os.getenv("makersuite")
 genai.configure(api_key=api)
 model = genai.GenerativeModel("gemini-1.5-flash")
 
