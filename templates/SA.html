@@ -1,0 +1,15 @@
+<head>
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+</head>
+
+<body>
+    <div class="container"><!--class用于确定模块的上下级从属关系，h2是 container的子元素-->
+        <h2>Sentiment Analysis</h2>
+        <p>Please Enter the Text </p>
+        <form action ="/SA_result" method="post">
+            <input type="text" name="q">
+            <input type="submit" value="Enter">
+        </form>
+    </div>
+</body>
